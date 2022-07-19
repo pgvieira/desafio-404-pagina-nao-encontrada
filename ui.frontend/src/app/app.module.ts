@@ -23,6 +23,10 @@ import { AemAngularCoreWcmComponentsSeparatorV1 } from "@adobe/aem-core-componen
 import { AemAngularCoreWcmComponentsAccordionV1 } from "@adobe/aem-core-components-angular-spa/containers/accordion/v1";
 import { AemAngularCoreWcmComponentsLanguageNavigationV1 } from "@adobe/aem-core-components-angular-base/layout/language-navigation/v1";
 
+import { AngularPageFooterComponent } from './components/angular-page-footer/angular-page-footer.component';
+import { AngularPageBodyComponent } from './components/angular-page-body/angular-page-body.component';
+import { AngularPageHeaderComponent } from './components/angular-page-header/angular-page-header.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -41,8 +45,8 @@ import { AemAngularCoreWcmComponentsLanguageNavigationV1 } from "@adobe/aem-core
     AemAngularCoreWcmComponentsLanguageNavigationV1,
   ],
   providers: [ModelManagerService, { provide: APP_BASE_HREF, useValue: "/" }],
-  declarations: [AppComponent, PageComponent],
-  entryComponents: [PageComponent],
+  declarations: [AppComponent, PageComponent, AngularPageFooterComponent, AngularPageBodyComponent, AngularPageHeaderComponent],
+  entryComponents: [PageComponent, AngularPageFooterComponent, AngularPageBodyComponent, AngularPageHeaderComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

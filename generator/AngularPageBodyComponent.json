@@ -1,0 +1,54 @@
+{
+  "project-settings": {
+    "code-owner": "Angular App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "angularapp",
+    "model-interface-pkg": "com.angularapp.core.models",
+    "model-impl-pkg": "com.angularapp.core.models.impl"
+  },
+  "name": "angular-page-body-component",
+  "title": "Angular Page Body Component",
+  "group": "Angular App - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "bodytitle",
+        "label": "Body Title",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "bodytitle"
+      },
+      {
+        "field": "bodycontent",
+        "label": "Body Content",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "bodycontent"
+      },
+      {
+        "field": "bodybutton",
+        "label": "Body Button",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "bodybutton"
+      }
+    ]
+  }
+}
